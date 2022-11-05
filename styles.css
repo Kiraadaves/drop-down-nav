@@ -1,0 +1,18 @@
+body {
+	background-color: #FF8FB1;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/**header**/
+
+#header-nav {
+	background-color: white;
+	border-radius: 0;
+	border: 0;
+}
+
+/**#image-logo {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin: 0;
+}
