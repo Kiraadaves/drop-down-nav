@@ -11,8 +11,29 @@ body {
 	border: 0;
 }
 
-/**#image-logo {
-	padding-top: 0;
-	padding-bottom: 0;
+#image-logo {
+	width: 100px;
+	height: 100px;
 	margin: 0;
+	padding: 0;
+}
+
+#cart {
+	margin-right: 30px;
+}
+
+#header-nav {
+	color: #FF5B00;
+	font-size: 20px;
+}
+
+#button {
+	background-color: #E87121;
+	color: white;
+	border-radius: 10px;
+	font-size: 20px;
+	padding-right: 18px;
+	padding-left: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
