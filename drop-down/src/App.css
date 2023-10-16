@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+
+.White {
+  color: hsl(0, 0%, 98%);
+}  
+
+.Gray {
+  color: hsl(0, 0%, 41%);
+}  
+.Black {
+color: hsl(0, 0%, 8%);
+} 
+
+.mbb {
+  margin-bottom: 0.15rem;
+}
+
+@media screen and (max-width: 768px) {
+  
+}
