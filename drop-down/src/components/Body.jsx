@@ -32,7 +32,7 @@ const Main = () => {
           <div className="mt-12">
             <Button
               text="Learn more"
-              className={`border-2 border-solid bg-black text-white hover:bg-white hover:text-black rounded-2xl font-semibold px-7 py-3 animate__animated ${
+              className={`  Whitehover border-2 border-solid bg-black White  rounded-2xl font-semibold px-7 py-3 animate__animated ${
                 isHovered ? "animate__pulse" : ""
               }`}
               onMouseEnter={handleMouseEnter}
@@ -41,7 +41,7 @@ const Main = () => {
           </div>
         </div>
         <div>
-          <div className="lg:mt-0 mt-12 flex gap-1 lg:gap-8 lg:justify-start justify-center">
+          <div className="lg:mt-0 mt-12 items-center flex gap-1  lg:gap-8 lg:justify-start justify-center">
             <Databiz />
             <Audiophile />
             <Meet />

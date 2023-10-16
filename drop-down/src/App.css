@@ -9,7 +9,11 @@ body {
 
 .White {
   color: hsl(0, 0%, 98%);
-}  
+}
+.Whitehover:hover {
+  background-color: hsl(0, 0%, 98%);
+  color: black;
+}
 
 .Gray {
   color: hsl(0, 0%, 41%);
