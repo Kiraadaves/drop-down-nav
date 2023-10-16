@@ -53,12 +53,12 @@ const Main = () => {
         <img
           src={desktop}
           alt="Desktop Image"
-          className="hidden lg:block max-w-full" // Hide on mobile
+          className="hidden md:block max-w-full" // Hide on mobile
         />
         <img
           src={mobile}
           alt="Mobile Image"
-          className="block lg:hidden max-w-full" // Hide on desktop
+          className="block md:hidden max-w-full" // Hide on desktop
         />
       </div>
     </div>
