@@ -1,8 +1,8 @@
 import Button from "./Button";
-import Databiz from "../assets/images/Databiz";
-import Audiophile from "../assets/images/Audiophile";
-import Meet from "../assets/images/Meet";
-import Marker from "../assets/images/Marker";
+import Databiz from "../assets/images/client-databiz.svg";
+import Audiophile from "../assets/images/client-audiophile.svg";
+import Meet from "../assets/images/client-meet.svg";
+import Marker from "../assets/images/client-maker.svg";
 import desktop from "../assets/images/desktop.png";
 import mobile from "../assets/images/mobile.png";
 import "animate.css/animate.min.css";
@@ -41,11 +41,11 @@ const Main = () => {
           </div>
         </div>
         <div>
-          <div className="lg:mt-0 mt-12 items-center flex gap-1  lg:gap-8 lg:justify-start justify-center">
-            <Databiz />
-            <Audiophile />
-            <Meet />
-            <Marker />
+          <div className="brand lg:mt-0 mt-12 items-center flex gap-10  lg:gap-8 lg:justify-start justify-center">
+            <img src={Databiz} alt="Data Biz" className=""/>
+            <img src={Audiophile} alt="AudioPhile" className=""/>
+            <img src={Marker} alt="Marker" className=""/>
+            <img src={Meet} alt="Meet" className=""/>
           </div>
         </div>
       </div>
