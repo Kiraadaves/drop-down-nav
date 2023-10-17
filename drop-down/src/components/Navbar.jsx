@@ -5,11 +5,10 @@ import { useState } from "react";
 import Button from "./Button";
 import Feature from "./Feature";
 import Menu from "../assets/images/Menu";
-import Closemenu from "../assets/images/Closemenu";
 
-const Navbar = () => {
+
+const Navbar = ({showSidenav, setShowSidenav}) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -20,21 +19,21 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen);
+    setShowSidenav(!showSidenav);
   };
   return (
     <nav className={`pt-6 px-8 `}>
       <div className=" lg:static  navbar-container flex flex-col lg:flex-row lg:justify-between lg:items-center">
         <div className="relative flex flex-col lg:flex-row lg:gap-16 gap-5">
-          <Logo className="" />
+          <Logo className="logo" />
           <div className="lg:hidden absolute right-0">
             <button onClick={toggleMenu} className="">
-              {isOpen ? <Closemenu /> : <Menu />}
+              {showSidenav ? "" : <Menu className=""/>}
             </button>
           </div>
           <div
-            className={`feature  lg:z-auto z-10 lg:flex  lg:flex-row gap-4 lg:gap-16 ${
-              isOpen ? "block" : "hidden"
+            className={`feature hidden  lg:z-auto z-10 lg:flex  lg:flex-row gap-4 lg:gap-16 ${
+              showSidenav ? "block" : "hidden"
             }`}
           >
             <Feature />
@@ -48,8 +47,8 @@ const Navbar = () => {
           </div>
         </div>
         <div
-          className={`mbb login mt-3 lg:mt-0  lg:flex  lg:flex-row gap-3 lg:gap-6 lg:items-center ${
-            isOpen ? "block" : "hidden"
+          className={`mbb hidden login mt-3 lg:mt-0  lg:flex  lg:flex-row gap-3 lg:gap-6 lg:items-center ${
+            showSidenav ? "block" : "hidden"
           }`}
         >
           <div>

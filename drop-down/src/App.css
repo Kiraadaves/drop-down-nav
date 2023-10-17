@@ -32,3 +32,49 @@ color: hsl(0, 0%, 8%);
     height: 1.2rem;
   }
 }
+
+div.sidenav-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .2);
+  visibility: hidden;
+  transition: visibility 250ms ease-in;
+}
+
+div.sidenav-wrapper.showsidenav-wrapper {
+  visibility: visible;
+  transition: visibility 200ms ease-in;
+}
+
+div.sidenav {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  transition: right 200ms ease-in;
+}
+
+div.sidenav.show-sidenav {
+  right: 0;
+  transition: right 200ms ease-in;
+}
+
+div.sidenav nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+}
+
+div.sidenav nav .x {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+

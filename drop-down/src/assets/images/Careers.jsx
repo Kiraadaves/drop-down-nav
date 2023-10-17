@@ -6,7 +6,7 @@ const Careers = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="mt-3 lg:mt-0 cursor:pointer lg:relative lg:inline-block">
+    <div className="mt-6 lg:mt-0 cursor:pointer lg:relative lg:inline-block">
       <button
         className="flex items-center gap-2 focus:outline-none"
         onClick={toggleDropdown}
@@ -37,11 +37,11 @@ const Careers = () => {
         )}
       </button>
       {isOpen && (
-        <div className="animate__animated animate__pulse lg:origin-top-left lg:absolute lg:left-0 mt-4 w-32 bg-white lg:border lg:border-gray  py-4 px-6 rounded-lg">
+        <div className="animate__animated animate__pulse lg:origin-top-left lg:absolute lg:left-0 mt-4 w-32 bg-white lg:border lg:border-[#ebe7e7] lg:shadow-xl ml-4 lg:ml-0  py-4 px-6 rounded-lg">
           <ul className=" flex flex-col justify-center gap-1 ">
-            <li>History</li>
-            <li>Our Team</li>
-            <li>Blog</li>
+            <li className="hover:bg-[#f3e76a86] cursor-pointer">Our Team</li>
+            <li className="hover:bg-[#f3e76a86] cursor-pointer">History</li>
+            <li className="hover:bg-[#f3e76a86] cursor-pointer">Blog</li>
           </ul>
         </div>
       )}

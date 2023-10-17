@@ -49,18 +49,18 @@ const Feature = () => {
       </button>
 
       {isOpen && (
-        <div className="animate__animated animate__pulse dropdown lg:origin-top-left lg:absolute lg:-left-24 mt-4 w-44 bg-white border border-gray-300 py-4 pl-4 rounded-lg">
+        <div className="animate__animated animate__pulse dropdown lg:origin-top-left lg:absolute lg:-left-24 mt-4 w-44 bg-white lg:border lg:border-[#ebe7e7] lg:shadow-xl py-4 pl-4 rounded-lg">
           <ul className=" flex flex-col gap-1 items-center">
-            <li className="flex gap-4  justify-center pr-4">
+            <li className="hover:bg-[#f3e76a86] cursor-pointer flex gap-4  justify-center pr-4">
               <Todo /> <h1>Todo List</h1>
             </li>
-            <li className="flex gap-4  justify-center pr-4">
+            <li className="hover:bg-[#f3e76a86] cursor-pointer flex gap-4  justify-center pr-4">
               <Calender /> <h1>Calender</h1>
             </li>
-            <li className="flex gap-4 ml-4 justify-center pr-4">
+            <li className="hover:bg-[#f3e76a86] cursor-pointer flex gap-4 ml-4 justify-center pr-4">
               <Reminders /> <h1>Reminders</h1>
             </li>
-            <li className="flex gap-4  justify-center pr-4">
+            <li className="hover:bg-[#f3e76a86] cursor-pointer flex gap-4  justify-center pr-4">
               <Planning /> <h1>Planning</h1>
             </li>
           </ul>
